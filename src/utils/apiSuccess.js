@@ -24,7 +24,7 @@ class ApiSuccess {
   ) {
     return new ApiSuccess(204, message, data);
   }
-  static coustomSuccess(statusCode, message = 'Success', data = {}) {
+  static customSuccess(statusCode, message = 'Success', data = {}) {
     return new ApiSuccess(statusCode, message, data);
   }
 }
