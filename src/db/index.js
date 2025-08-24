@@ -8,7 +8,7 @@ let base_delay = 1000;
 export const dbConnect = async (attempt = 1) => {
   try {
     await mongoose.connect(MONGODB_URL);
-    console.log('Connected');
+    console.log('DB Connected');
   } catch (error) {
     if (attempt <= max_retry) {
       let delay = base_delay * 2 ** (attempt - 1);
